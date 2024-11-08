@@ -94,7 +94,8 @@ const Section1 = styled.section`
 
       @media ${device.mobile} {
         flex-direction: row-reverse;
-        width: 90%;
+        max-width: 70%;
+        width: 60%;
         font-size: 2.3rem;
         justify-content: space-between;
       }
@@ -108,7 +109,6 @@ const Section1 = styled.section`
       width: 100%;
       padding: 0;
       margin: 0;
-
       @media ${device.mobile} {
         display: none; /* Hide menu list on mobile */
       }
@@ -128,14 +128,14 @@ const Section1 = styled.section`
 const Article = styled.article`
 display:flex;
 flex-direction:column;
-padding:6rem 1rem 3rem 2.7rem;
+padding:5rem 1rem 3rem 2.7rem;
 
 h1{
   font-size:2.4rem;
   padding-bottom:15px;
 
   @media ${device.mobile} {
-   font-size:4.5rem;
+   font-size:2.2rem;
   }
 }
 
@@ -146,7 +146,7 @@ p{
   color:hsl(0, 0%, 63%);
 
   @media ${device.mobile} {
-   font-size:2.2rem;
+   font-size:1.2rem;
   }
 }
 
@@ -155,10 +155,6 @@ div{
   display:flex;
   align-items:center;
   gap:12px;
-
-  svg{
-  
-  }
 }
 
 button {
@@ -172,8 +168,9 @@ button {
     color: #000;
 
     @media ${device.mobile} {
-      font-size:1.7rem;
+      font-size:1.3rem;
       font-weight: 300;
+
     }
     svg {
       fill: #000;

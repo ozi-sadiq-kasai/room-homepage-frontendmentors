@@ -64,10 +64,7 @@ grid-template-columns: 2fr 1.1fr;
     .mobile-image {
       display: block;
       width: 100%;
-    }
-    h3{
-      display:block;
-    }  
+    } 
   }
 
   nav {
@@ -85,7 +82,8 @@ grid-template-columns: 2fr 1.1fr;
 
       @media ${device.mobile} {
         flex-direction: row-reverse;
-        width: 90%;
+        max-width: 70%;
+        width: 60%;
         font-size:2.3rem;
         justify-content:space-between;
       }
@@ -123,39 +121,40 @@ grid-template-columns: 2fr 1.1fr;
 const Article = styled.article`
 display:flex;
 flex-direction:column;
-padding:6rem 2rem 3rem 2.7rem;
+padding:5rem 2rem 3rem 2.7rem;
 
 h1{
   font-size:2.4rem;
   padding-bottom:15px;
 
  @media ${device.mobile} {
-      font-size:4.2rem;
+    font-size:2.2rem;
     }  
 }
 
 p{
   font-size:14px;
   margin-bottom:1rem;
-  line-height:1.6;
+  line-height:1.4;
   color:hsl(0, 0%, 63%);
 
   @media ${device.mobile} {
-    font-size:1.99rem;
+    font-size:1.2rem;
   }  
 }
 
 div{
-    display:flex;
-    align-items:center;
-    gap:10px
+   padding-top:20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 button {
     display: flex;
     align-items: center;
     gap: 5px; 
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.9rem;
     font-weight: 600;
     background-color: transparent;
     border: none;
@@ -163,11 +162,10 @@ button {
     transition: color 0.3s ease, fill 0.3s ease;
   
     @media ${device.mobile} {
-      font-size:1.7rem;
+      font-size:1.3rem;
       font-weight: 300;
     }
     
-
     svg {
       fill: #000; /* Default arrow color */
       transition: fill 0.3s ease; /* Smooth transition for arrow */

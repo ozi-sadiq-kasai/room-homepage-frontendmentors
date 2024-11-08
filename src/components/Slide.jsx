@@ -73,8 +73,8 @@ const NavArrows = styled.div`
   transform: translateY(-50%);
 
   @media ${device.mobile} {
-    top: 25%;
-    left:85.5%;
+    top: 21%;
+    left:71.3%;
 `;
 
 const ArrowButton = styled.button`
@@ -116,13 +116,13 @@ article{
    letter-spacing: 0.4em;
 
    @media ${device.mobile}{
-    font-size:25px;
+    font-size:1rem;
    }
   }
   p{
    color:hsl(0, 0%, 63%); 
    @media ${device.mobile}{
-    font-size:2.2rem;
+     font-size:1rem;
    }
   }
 }

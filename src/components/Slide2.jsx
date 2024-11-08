@@ -85,7 +85,8 @@ const Section1 = styled.section`
 
       @media ${device.mobile} {
         flex-direction: row-reverse;
-        width: 90%;
+        max-width: 70%;
+        width: 60%;
         font-size:2.3rem;
         justify-content:space-between;
       }
@@ -124,25 +125,25 @@ const Section1 = styled.section`
 const Article = styled.article`
   display: flex;
   flex-direction: column;
-  padding: 6rem 1rem 3rem 2.7rem;
+  padding: 5rem 1rem 3rem 2.7rem;
 
   h1 {
     font-size: 2.4rem;
     padding-bottom: 15px;
 
     @media ${device.mobile} {
-      font-size:4.2rem;
+      font-size:2.2rem;
     }
   }
 
   p {
     font-size: 14px;
     margin-bottom: 1rem;
-    line-height: 1.6;
+    line-height: 1.4;
     color: hsl(0, 0%, 63%);
     
     @media ${device.mobile} {
-    font-size:2.03rem;
+      font-size:1.2rem;
     }
   }
 
@@ -157,7 +158,7 @@ const Article = styled.article`
     display: flex;
     align-items: center;
     gap: 5px; 
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.9rem;
     font-weight: 600;
     background-color: transparent;
     border: none;
@@ -165,7 +166,7 @@ const Article = styled.article`
     transition: color 0.3s ease, fill 0.3s ease;
   
     @media ${device.mobile} {
-      font-size:1.7rem;
+      font-size:1.3rem;
       font-weight: 300;
     }
 
